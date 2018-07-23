@@ -1,10 +1,3 @@
-# Yarpiz Differential Evolution (ypde)
-Differential Evolution in Python
-
-## How to use?
-A basic usage and sample application is implemented in `app.py`. You may choose any of benchmark functions defined in `benchmarks.py`. Before using this, you should install `numpy`, `matplotlib` and `ypstruct`.
-
-```
 # External Libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -17,7 +10,7 @@ import benchmarks
 # Problem Definition
 problem = structure()
 problem.objfunc = benchmarks.rastrigin  # See benchmarks module for other functions
-problem.nvar = 100
+problem.nvar = 50
 problem.varmin = -10
 problem.varmax = 10
 
@@ -26,7 +19,7 @@ params = structure()
 params.maxit = 1000
 params.npop = 100
 params.F = 0.2
-params.CR = 0.4
+params.CR = 0.2
 params.DisplayInfo = True
 
 # Run DE
@@ -43,4 +36,3 @@ plt.ylabel("Best Cost")
 plt.title("Differential Evolution")
 plt.grid(True)
 plt.show()
-```
