@@ -17,9 +17,9 @@ problem.varmax = 10
 # Parameters of Differential Evolution (DE)
 params = structure()
 params.maxit = 1000
-params.npop = 100
+params.npop = 50
 params.F = 0.2
-params.CR = 0.2
+params.CR = 0.1
 params.DisplayInfo = True
 
 # Run DE
